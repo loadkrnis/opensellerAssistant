@@ -645,6 +645,24 @@ export default function Landing() {
             {/*====== FOOTER PART START ======*/}
             <footer id="footer" className="footer-area pt-120">
                 <div className="container">
+                    <div className="subscribe-area wow fadeIn" style={{visibility:'hidden'}} data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div className="row">
+                            <div className="col-lg-6">
+                                <div className="subscribe-content mt-45">
+                                    <h2 className="subscribe-title">Subscribe Our
+                                        Newsletter <span>get reguler updates</span></h2>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="subscribe-form mt-50">
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter eamil" />
+                                        <button className="main-btn">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="footer-widget pb-100">
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-sm-8">
