@@ -4,8 +4,6 @@ import Shape from "../assets/images/services-shape.svg";
 import Shape2 from "../assets/images/services-shape-2.svg";
 import {Link} from "react-router-dom";
 
-
-
 export default function Signup()
 {
     const [emoji, setEmoji] = useState("lni-emoji-suspect")
@@ -41,7 +39,7 @@ export default function Signup()
         document.getElementById("signup_form").addEventListener("submit", (event) => {
             event.preventDefault();
             alert("submit");
-        })
+        });
     }, [])
 
     return (
