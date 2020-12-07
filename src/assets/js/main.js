@@ -7,7 +7,7 @@ $(function () {
 
     // eslint-disable-next-line no-undef
     $(window).on('load', function (event) {
-        // eslint-disable-next-line no-undef
+        eslint-disable-next-line no-undef
         $('.preloader').delay(500).fadeOut(500);
     });
 
