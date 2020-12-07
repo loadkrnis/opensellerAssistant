@@ -1,4 +1,4 @@
-import React  from "react";
+import React, {useState, useEffect}  from "react";
 import {Link} from "react-router-dom";
 
 import "../assets/css/animate.css";
@@ -41,6 +41,35 @@ import Blog2 from '../assets/images/blog-2.jpg';
 import Blog3 from '../assets/images/blog-3.jpg';
 
 export default function Landing() {
+
+    function fadeOut(target) {
+        var level = 1;
+        var outTimer = null;
+        outTimer = setInterval(() => {
+            level = fadeOutAction(target, level, outTimer);
+        }, 50);
+    }
+    function fadeOutAction(target, level, outTimer) {
+        level = level - 0.1;
+        changeOpacity(target, level);
+        if (level < 0) {
+            clearInterval(outTimer);
+            target.style.display = 'none';
+        }
+        return level;
+    }
+    function changeOpacity(target, level) {
+        var obj = target;
+        obj.style.opacity = level;
+        obj.style.MozOpacity = level;
+        obj.KhtmlOpacity = level;
+    }
+    useEffect(()=>{
+        let preloader = document.getElementsByClassName('preloader').item(0);
+        setTimeout(() =>{
+            fadeOut(preloader);
+        }, 500);
+    }, []);
 
     return (
         <>
@@ -101,7 +130,7 @@ export default function Landing() {
                                     </div>
                                     {/* navbar collapse */}
                                     <div className="navbar-btn d-none d-sm-inline-block">
-                                        <Link className="main-btn" data-scroll-nav={0} to='/signup'>Free Trial</Link>
+                                        <Link className="main-btn" data-scroll-nav={0} to='/signup'>회원가입</Link>
                                     </div>
                                 </nav>
                                 {/* navbar */}
