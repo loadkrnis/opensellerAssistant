@@ -194,9 +194,9 @@ export default function Landing() {
                                     <i className="lni-baloon" />
                                 </div>
                                 <div className="services-content mt-30">
-                                    <h4 className="services-title"><a href="#">Clean</a></h4>
+                                    <h4 className="services-title"><a href="/">Clean</a></h4>
                                     <p className="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-                                    <a className="more" href="#">Learn More <i className="lni-chevron-right" /></a>
+                                    <a className="more" href="/">Learn More <i className="lni-chevron-right" /></a>
                                 </div>
                             </div> {/* single services */}
                         </div>
@@ -208,9 +208,9 @@ export default function Landing() {
                                     <i className="lni-cog" />
                                 </div>
                                 <div className="services-content mt-30">
-                                    <h4 className="services-title"><a href="#">Robust</a></h4>
+                                    <h4 className="services-title"><a href="/">Robust</a></h4>
                                     <p className="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-                                    <a className="more" href="#">Learn More <i className="lni-chevron-right" /></a>
+                                    <a className="more" href="/">Learn More <i className="lni-chevron-right" /></a>
                                 </div>
                             </div> {/* single services */}
                         </div>
@@ -222,9 +222,9 @@ export default function Landing() {
                                     <i className="lni-bolt-alt" />
                                 </div>
                                 <div className="services-content mt-30">
-                                    <h4 className="services-title"><a href="#">Powerful</a></h4>
+                                    <h4 className="services-title"><a href="/">Powerful</a></h4>
                                     <p className="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-                                    <a className="more" href="#">Learn More <i className="lni-chevron-right" /></a>
+                                    <a className="more" href="/">Learn More <i className="lni-chevron-right" /></a>
                                 </div>
                             </div> {/* single services */}
                         </div>
@@ -243,7 +243,7 @@ export default function Landing() {
                                     <h3 className="title">Quick &amp; Easy <span>to Use Bootstrap Template</span></h3>
                                 </div> {/* section title */}
                                 <p className="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
-                                <a href="#" className="main-btn">Try it Free</a>
+                                <a href="/" className="main-btn">Try it Free</a>
                             </div> {/* about content */}
                         </div>
                         <div className="col-lg-6">
@@ -272,7 +272,7 @@ export default function Landing() {
                                     <h3 className="title">Modern design <span> with Essential Features</span></h3>
                                 </div> {/* section title */}
                                 <p className="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
-                                <a href="#" className="main-btn">Try it Free</a>
+                                <a href="/" className="main-btn">Try it Free</a>
                             </div> {/* about content */}
                         </div>
                         <div className="col-lg-6 order-lg-first">
@@ -294,7 +294,7 @@ export default function Landing() {
                                     <h3 className="title"><span>Crafted for</span> SaaS, App and Software Landing Page</h3>
                                 </div> {/* section title */}
                                 <p className="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
-                                <a href="#" className="main-btn">Try it Free</a>
+                                <a href="/" className="main-btn">Try it Free</a>
                             </div> {/* about content */}
                         </div>
                         <div className="col-lg-6">
@@ -386,15 +386,15 @@ export default function Landing() {
                                     <img src={Team1} alt="Team" />
                                     <div className="social">
                                         <ul>
-                                            <li><a href="#"><i className="lni-facebook-filled" /></a></li>
-                                            <li><a href="#"><i className="lni-twitter-filled" /></a></li>
-                                            <li><a href="#"><i className="lni-instagram-filled" /></a></li>
-                                            <li><a href="#"><i className="lni-linkedin-original" /></a></li>
+                                            <li><a href="/"><i className="lni-facebook-filled" /></a></li>
+                                            <li><a href="/"><i className="lni-twitter-filled" /></a></li>
+                                            <li><a href="/"><i className="lni-instagram-filled" /></a></li>
+                                            <li><a href="/"><i className="lni-linkedin-original" /></a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="team-content">
-                                    <h5 className="holder-name"><a href="#">Isabela Moreira</a></h5>
+                                    <h5 className="holder-name"><a href="/">Isabela Moreira</a></h5>
                                     <p className="text">Founder and CEO</p>
                                 </div>
                             </div> {/* single team */}
@@ -405,15 +405,15 @@ export default function Landing() {
                                     <img src={Team2} alt="Team" />
                                     <div className="social">
                                         <ul>
-                                            <li><a href="#"><i className="lni-facebook-filled" /></a></li>
-                                            <li><a href="#"><i className="lni-twitter-filled" /></a></li>
-                                            <li><a href="#"><i className="lni-instagram-filled" /></a></li>
-                                            <li><a href="#"><i className="lni-linkedin-original" /></a></li>
+                                            <li><a href="/"><i className="lni-facebook-filled" /></a></li>
+                                            <li><a href="/"><i className="lni-twitter-filled" /></a></li>
+                                            <li><a href="/"><i className="lni-instagram-filled" /></a></li>
+                                            <li><a href="/"><i className="lni-linkedin-original" /></a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="team-content">
-                                    <h5 className="holder-name"><a href="#">Elon Musk</a></h5>
+                                    <h5 className="holder-name"><a href="/">Elon Musk</a></h5>
                                     <p className="text">Sr. Software Engineer</p>
                                 </div>
                             </div> {/* single team */}
@@ -424,15 +424,15 @@ export default function Landing() {
                                     <img src={Team3} alt="Team" />
                                     <div className="social">
                                         <ul>
-                                            <li><a href="#"><i className="lni-facebook-filled" /></a></li>
-                                            <li><a href="#"><i className="lni-twitter-filled" /></a></li>
-                                            <li><a href="#"><i className="lni-instagram-filled" /></a></li>
-                                            <li><a href="#"><i className="lni-linkedin-original" /></a></li>
+                                            <li><a href="/"><i className="lni-facebook-filled" /></a></li>
+                                            <li><a href="/"><i className="lni-twitter-filled" /></a></li>
+                                            <li><a href="/"><i className="lni-instagram-filled" /></a></li>
+                                            <li><a href="/"><i className="lni-linkedin-original" /></a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="team-content">
-                                    <h5 className="holder-name"><a href="#">Fiona Smith</a></h5>
+                                    <h5 className="holder-name"><a href="/">Fiona Smith</a></h5>
                                     <p className="text">Business Development Manager</p>
                                 </div>
                             </div> {/* single team */}
@@ -600,11 +600,11 @@ export default function Landing() {
                                 </div>
                                 <div className="blog-content">
                                     <ul className="meta">
-                                        <li>Posted By: <a href="#">Admin</a></li>
+                                        <li>Posted By: <a href="/">Admin</a></li>
                                         <li>03 June, 2023</li>
                                     </ul>
                                     <p className="text">Lorem ipsuamet conset sadips cing elitr seddiam nonu eirmod tempor invidunt labore.</p>
-                                    <a className="more" href="#">Learn More <i className="lni-chevron-right" /></a>
+                                    <a className="more" href="/">Learn More <i className="lni-chevron-right" /></a>
                                 </div>
                             </div> {/* single blog */}
                         </div>
@@ -615,11 +615,11 @@ export default function Landing() {
                                 </div>
                                 <div className="blog-content">
                                     <ul className="meta">
-                                        <li>Posted By: <a href="#">Admin</a></li>
+                                        <li>Posted By: <a href="/">Admin</a></li>
                                         <li>03 June, 2023</li>
                                     </ul>
                                     <p className="text">Lorem ipsuamet conset sadips cing elitr seddiam nonu eirmod tempor invidunt labore.</p>
-                                    <a className="more" href="#">Learn More <i className="lni-chevron-right" /></a>
+                                    <a className="more" href="/">Learn More <i className="lni-chevron-right" /></a>
                                 </div>
                             </div> {/* single blog */}
                         </div>
@@ -630,11 +630,11 @@ export default function Landing() {
                                 </div>
                                 <div className="blog-content">
                                     <ul className="meta">
-                                        <li>Posted By: <a href="#">Admin</a></li>
+                                        <li>Posted By: <a href="/">Admin</a></li>
                                         <li>03 June, 2023</li>
                                     </ul>
                                     <p className="text">Lorem ipsuamet conset sadips cing elitr seddiam nonu eirmod tempor invidunt labore.</p>
-                                    <a className="more" href="#">Learn More <i className="lni-chevron-right" /></a>
+                                    <a className="more" href="/">Learn More <i className="lni-chevron-right" /></a>
                                 </div>
                             </div> {/* single blog */}
                         </div>
@@ -667,15 +667,15 @@ export default function Landing() {
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-sm-8">
                                 <div className="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                                    <a className="logo" href="#">
+                                    <a className="logo" href="/">
                                         <img src={Logo} alt="logo" />
                                     </a>
                                     <p className="text">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
                                     <ul className="social">
-                                        <li><a href="#"><i className="lni-facebook-filled" /></a></li>
-                                        <li><a href="#"><i className="lni-twitter-filled" /></a></li>
-                                        <li><a href="#"><i className="lni-instagram-filled" /></a></li>
-                                        <li><a href="#"><i className="lni-linkedin-original" /></a></li>
+                                        <li><a href="/"><i className="lni-facebook-filled" /></a></li>
+                                        <li><a href="/"><i className="lni-twitter-filled" /></a></li>
+                                        <li><a href="/"><i className="lni-instagram-filled" /></a></li>
+                                        <li><a href="/"><i className="lni-linkedin-original" /></a></li>
                                     </ul>
                                 </div> {/* footer about */}
                             </div>
@@ -686,11 +686,11 @@ export default function Landing() {
                                             <h4 className="title">Quick Link</h4>
                                         </div>
                                         <ul className="link">
-                                            <li><a href="#">Road Map</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Refund Policy</a></li>
-                                            <li><a href="#">Terms of Service</a></li>
-                                            <li><a href="#">Pricing</a></li>
+                                            <li><a href="/">Road Map</a></li>
+                                            <li><a href="/">Privacy Policy</a></li>
+                                            <li><a href="/">Refund Policy</a></li>
+                                            <li><a href="/">Terms of Service</a></li>
+                                            <li><a href="/">Pricing</a></li>
                                         </ul>
                                     </div> {/* footer wrapper */}
                                     <div className="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
@@ -698,11 +698,11 @@ export default function Landing() {
                                             <h4 className="title">Resources</h4>
                                         </div>
                                         <ul className="link">
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Page</a></li>
-                                            <li><a href="#">Portfolio</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="/">Page</a></li>
+                                            <li><a href="/">Portfolio</a></li>
+                                            <li><a href="/">Blog</a></li>
+                                            <li><a href="/">Contact</a></li>
                                         </ul>
                                     </div> {/* footer wrapper */}
                                 </div> {/* footer link */}
@@ -727,7 +727,7 @@ export default function Landing() {
             </footer>
             {/*====== FOOTER PART ENDS ======*/}
             {/*====== BACK TOP TOP PART START ======*/}
-            <a href="#" className="back-to-top"><i className="lni-chevron-up" /></a>
+            <a href="/" className="back-to-top"><i className="lni-chevron-up" /></a>
             {/*====== BACK TOP TOP PART ENDS ======*/}
         </>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {createBrowserHistory} from "history";
-import {Router, Route, Switch, Redirect, BrowserRouter} from "react-router-dom";
+import {Route, Switch, BrowserRouter} from "react-router-dom";
 
 import Landing from "./layouts/Landing";
 import Signup from "./layouts/Signup"

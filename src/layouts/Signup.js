@@ -1,10 +1,7 @@
 import React from 'react';
 import Logo from "../assets/images/logo.svg";
-import {Link} from "react-router-dom";
-import HeaderHero from "../assets/images/header-hero.png";
 import Shape from "../assets/images/services-shape.svg";
 import Shape2 from "../assets/images/services-shape-2.svg";
-import Shape3 from "../assets/images/services-shape-3.svg";
 
 
 
@@ -46,7 +43,7 @@ export default function Signup()
                                 <i className="lni-emoji-suspect" />
                             </div>
                             <form className="services-content mt-30">
-                                <h4 className="services-title"><a href="#">회원가입 폼</a></h4>
+                                <h4 className="services-title"><a href="/signup">회원가입 폼</a></h4>
 
                                 <div className="m-5">
                                 <p className="text" style={{display:'inline'}}>이메일 : </p>
