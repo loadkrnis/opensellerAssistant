@@ -76,7 +76,13 @@ const dashboardStyle = {
       fontWeight: "400",
       lineHeight: "1"
     }
-  }
+  },
+  paper: {
+    padding: '6px 16px',
+  },
+  secondaryTail: {
+    backgroundColor: '#3f51b5',
+  },
 };
 
 export default dashboardStyle;
