@@ -1,4 +1,4 @@
-import React, {useState, useEffect}  from "react";
+import React, {useEffect, useContext} from "react";
 import {Link} from "react-router-dom";
 
 import "../assets/css/animate.css";
@@ -12,6 +12,7 @@ import "../assets/css/style.css";
 import "../hooks/useScript";
 
 import Logo from '../assets/images/logo.svg';
+// import Logo2 from '../assets/images/logo-2.svg';
 import HeaderHero from '../assets/images/header-hero.png';
 import Auction from '../assets/images/auction.png';
 import Coupang from '../assets/images/coupang.png';
@@ -40,11 +41,47 @@ import Blog1 from '../assets/images/blog-1.jpg';
 import Blog2 from '../assets/images/blog-2.jpg';
 import Blog3 from '../assets/images/blog-3.jpg';
 
+import {AccountContext} from "../stores/AccountStore";
+
+function SignButton(props) {
+
+    let class_name = "main-btn";
+    let to = "";
+    let innertext = "";
+    let styleDisplay = "";
+
+    if (props.displayType === "signup")
+    {
+        to = "/signup";
+        innertext = "회원가입";
+    }
+    else if (props.displayType === "signin")
+    {
+        to = "/signin";
+        innertext = "로그인";
+    }
+
+    if (props.isSignIn) {
+        to = "/admin";
+        innertext = "관리페이지";
+        if (props.displayType === "signup")
+        {
+            styleDisplay = "none";
+        }
+    }
+    return (
+        <Link to={to} className={class_name} data-scroll-nav={0} style={{marginLeft:'30px', display:styleDisplay}}>{innertext}</Link>
+    );
+}
 export default function Landing() {
 
+    // eslint-disable-next-line no-unused-vars
+    const {account, setAccount} = useContext(AccountContext);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     function fadeOut(target) {
-        var level = 1;
-        var outTimer = null;
+        let level = 1;
+        let outTimer = null;
         outTimer = setInterval(() => {
             level = fadeOutAction(target, level, outTimer);
         }, 50);
@@ -69,7 +106,7 @@ export default function Landing() {
         setTimeout(() =>{
             fadeOut(preloader);
         }, 500);
-    }, []);
+    }, [fadeOut]);
 
     return (
         <>
@@ -79,10 +116,10 @@ export default function Landing() {
                         <div className="ytp-spinner-container">
                             <div className="ytp-spinner-rotator">
                                 <div className="ytp-spinner-left">
-                                    <div className="ytp-spinner-circle"></div>
+                                    <div className="ytp-spinner-circle"/>
                                 </div>
                                 <div className="ytp-spinner-right">
-                                    <div className="ytp-spinner-circle"></div>
+                                    <div className="ytp-spinner-circle"/>
                                 </div>
                             </div>
                         </div>
@@ -117,20 +154,22 @@ export default function Landing() {
                                             <li className="nav-item">
                                                 <a className="page-scroll" href="#about">About</a>
                                             </li>
-                                            <li className="nav-item">
-                                                <a className="page-scroll" href="#facts">Why</a>
-                                            </li>
-                                            <li className="nav-item">
-                                                <a className="page-scroll" href="#team">Team</a>
-                                            </li>
-                                            <li className="nav-item">
-                                                <a className="page-scroll" href="#blog">Blog</a>
-                                            </li>
+                                            {/*<li className="nav-item">*/}
+                                            {/*    <a className="page-scroll" href="#facts">Why</a>*/}
+                                            {/*</li>*/}
+                                            {/*<li className="nav-item">*/}
+                                            {/*    <a className="page-scroll" href="#team">Team</a>*/}
+                                            {/*</li>*/}
+                                            {/*<li className="nav-item">*/}
+                                            {/*    <a className="page-scroll" href="#blog">Blog</a>*/}
+                                            {/*</li>*/}
                                         </ul>
                                     </div>
                                     {/* navbar collapse */}
                                     <div className="navbar-btn d-none d-sm-inline-block">
-                                        <Link className="main-btn" data-scroll-nav={0} to='/signup'>회원가입</Link>
+                                        {/*<Link className="main-btn" data-scroll-nav={0} to='/signup'>회원가입</Link>*/}
+                                        <SignButton isSignIn={account.isLogin} displayType="signin" />
+                                        <SignButton isSignIn={account.isLogin} displayType="signup" />
                                     </div>
                                 </nav>
                                 {/* navbar */}
@@ -154,8 +193,7 @@ export default function Landing() {
                                     <p className="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">초보
                                         사장님부터 만렙 사장님까지!<br/>키냅스로 오픈마켓과 개인 쇼핑몰을 키우고<br/>상품 판매룰 극대화하는 마케팅 전략을 세울 수 있습니다.
                                     </p>
-                                    <Link to='/signup' className="main-btn wow fadeInUp" data-wow-duration="1.3s"
-                                       data-wow-delay="1.1s">무료 체험하러 가기</Link>
+                                    <Link to="/signup" className="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">무료 체험하러 가기</Link>
                                 </div>
                                 {/* header hero content */}
                             </div>
