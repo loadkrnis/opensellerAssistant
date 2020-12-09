@@ -16,6 +16,9 @@ import FormControl from "@material-ui/core/FormControl";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import Radio from "@material-ui/core/Radio";
 
+import LockTwoToneIcon from '@material-ui/icons/LockTwoTone';
+import CardIcon from "../../components/Card/CardIcon";
+
 const styles = {
   root: {
     display: 'flex',
@@ -47,68 +50,40 @@ export default function UserProfile() {
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+  //warning, success, danger, info,
   return (
       <div>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={6}>
-            <Card>
-              <CardHeader color="primary">
-                <h2 className={classes.cardTitleWhite}>API 등록</h2>
-              </CardHeader>
-              <CardBody>
-                <br/>
-                <GridContainer>
-                  <GridItem xs={12} sm={12} md={12}>
-                    <FormControl component="fieldset">
-                      <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
-                        <FormControlLabel value="female" control={<Radio />} label="쿠팡" />
-                        {/*<FormControlLabel value="male" control={<Radio />} label="X" />*/}
-                        {/*<FormControlLabel value="other" control={<Radio />} label="X" />*/}
-                        {/*<FormControlLabel value="other2" control={<Radio />} label="X" />*/}
-                      </RadioGroup>
-                    </FormControl>
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={12}>
-                    <CustomInput
-                        labelText="업체명"
-                        formControlProps={{
-                          fullWidth: true
-                        }}
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={12}>
-                    <CustomInput
-                        labelText="업체코드"
-                        formControlProps={{
-                          fullWidth: true
-                        }}
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={12}>
-                    <CustomInput
-                        labelText="Access Key"
-                        formControlProps={{
-                          fullWidth: true
-                        }}
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={12}>
-                    <CustomInput
-                        labelText="Secret Key"
-                        formControlProps={{
-                          fullWidth: true
-                        }}
-                    />
-                  </GridItem>
-
-                </GridContainer>
-              </CardBody>
-              <CardFooter>
-                <Button color="primary">업로드</Button>
-              </CardFooter>
-            </Card>
-          </GridItem>
-        </GridContainer>
+        <Card>
+          <CardHeader color="info" stats icon>
+            <CardIcon color="info">
+              <LockTwoToneIcon></LockTwoToneIcon>
+            </CardIcon>
+          </CardHeader>
+          <CardBody>
+            <GridContainer>
+              <GridItem xs={12} sm={12} md={6}>
+                <Card>
+                  <CardHeader color="success">
+                    <h4 className={classes.cardTitleWhite}>계정목록</h4>
+                  </CardHeader>
+                  <CardBody>
+                    asd
+                  </CardBody>
+                </Card>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={6}>
+                <Card>
+                  <CardHeader color="warning">
+                    <h4 className={classes.cardTitleWhite}>추가하기</h4>
+                  </CardHeader>
+                  <CardBody>
+                    asd
+                  </CardBody>
+                </Card>
+              </GridItem>
+            </GridContainer>
+          </CardBody>
+        </Card>
       </div>
   );
 }
